@@ -9,8 +9,5 @@ public class Program {
 
         UI.printBoard(chessMatch.getPieces());
 
-        System.out.println("fim");
-
-
     }
 }
