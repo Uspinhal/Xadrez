@@ -32,6 +32,11 @@ public class UI {
 
 
     // Outros métodos
+    public static void clearScream() {
+        System.out.println("\033[H\033[2J");
+        System.out.flush();
+    }
+
     public static ChessPosition readChessPosition(Scanner sc) {
         try {
             String s = sc.nextLine();
