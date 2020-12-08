@@ -4,11 +4,13 @@ public class Position {
     private int row;
     private int column;
 
+    // Construtor
     public Position(int row, int column) {
         this.row = row;
         this.column = column;
     }
 
+    // Getter & Setters
     public int getRow() {
         return this.row;
     }
@@ -25,9 +27,14 @@ public class Position {
         this.column = column;
     }
 
+    // Outros métodos
     @Override
     public String toString() {
         return getRow() + ", " + getColumn();
     }
 
+    public void setValues(int row, int column) {
+        this.row = row;
+        this.column = column;
+    }
 }
