@@ -12,13 +12,13 @@ import chess.ChessPosition;
 
 public class Program {
     public static void main(String[] args) {
-        boolean exit = false;
+        //boolean exit = false;
         Scanner sc = new Scanner(System.in); 
         ChessMatch chessMatch = new ChessMatch();
         List<ChessPiece> captured = new ArrayList<>();
 
         
-        while (!exit) {
+        while (!chessMatch.getCheckMate()) {
             try{
                 //if (sc.equals("q")) {
                 //    exit = true;   
@@ -51,7 +51,7 @@ public class Program {
                 sc.nextLine();
             }
         }
-        
-
+        UI.clearScream();
+        UI.printMatch(chessMatch, captured);
     }
 }
