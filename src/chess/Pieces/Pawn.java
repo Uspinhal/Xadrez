@@ -60,7 +60,7 @@ public class Pawn extends ChessPiece {
         }
 
         // En Passant
-        if (position.getRow() == 3) {
+        if (position.getRow() == s3) {
             Position left = new Position(position.getRow(), position.getColumn()-1);
             Position right = new Position(position.getRow(), position.getColumn()+1);
 
